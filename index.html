@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionand Produtos</title>
+ 
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lista de Produtos</h1>
+
+       
+        <div class="container-item">
+            <input id="produto" type="text">
+            <button onclick="adicionanrProduto()">Adicionar Produtos</button>
+        </div>
+
+        <ol id="listaProduto">
+
+        </ol>
+    </div>
+
+
+    <script>
+        function adicionanrProduto() {
+            var produto = document.querySelector("#produto").value;
+            var listaProduto = document.querySelector("#listaProduto").innerHTML;
+
+            listaProduto = listaProduto + "<li>" + produto + "</li>";
+
+            document.querySelector("#listaProduto").innerHTML = listaProduto;
+        }
+        produto.focus();
+
+    </script>
+</body>
+
+</html>
